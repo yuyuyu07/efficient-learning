@@ -39,7 +39,7 @@ def get_absolute_path_relative_to_script(path):
 # --- Streamlit 应用标题和说明 (主区域) ---
 st.title("高效学习法")
 st.write("这个应用会在3-5分钟随机提示，闭眼深呼吸10秒，持续学习90分钟结束。")
-st.write("然后休息20分钟，冥想、短睡等。释放大脑大脑内存。详情可点开侧边栏的视频链接观看") # 小修改，大脑内存更流畅
+st.write("然后休息20分钟，冥想、短睡等。释放大脑内存，为接下来的学习做准备。详情可点开侧边栏的视频链接观看") # 小修改，大脑内存更流畅
 
 # --- 使用 Session State 管理应用状态 ---
 # 初始化 session state 变量
@@ -80,7 +80,7 @@ if 'status_data' not in st.session_state or not isinstance(st.session_state.stat
 if 'regular_sound_path' not in st.session_state:
     st.session_state.regular_sound_path = '剑鸣2秒.wav'
 if 'final_sound_path' not in st.session_state:
-    st.session_state.final_sound_path = 'Noctilumine（钢琴单轨版）.wav'
+    st.session_state.final_sound_path = 'Eyecatch.wav'
 if 'min_interval_minutes' not in st.session_state:
      st.session_state.min_interval_minutes = 3
 if 'max_interval_minutes' not in st.session_state:
@@ -88,7 +88,7 @@ if 'max_interval_minutes' not in st.session_state:
 if 'total_duration_minutes' not in st.session_state:
      st.session_state.total_duration_minutes = 90
 if 'final_duration_seconds' not in st.session_state:
-     st.session_state.final_duration_seconds = 200
+     st.session_state.final_duration_seconds = 10
 if 'volume_control' not in st.session_state:
      st.session_state.volume_control = 0.1
 
